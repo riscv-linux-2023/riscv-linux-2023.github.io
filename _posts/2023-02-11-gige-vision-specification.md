@@ -88,7 +88,7 @@ VCL | Video Coding Layer
 
 ### System Overview
 
-![overview](/assets/images/overview.png)
+![overview](/assets/images/gige/overview.png)
 
 1. Transmitter: A transmitter is a device capable of streaming data. It includes one or more GVSP transmitters. For instance, this can be a *camera*.
 2. Receiver: A receiver is a device capable of receiving data. It includes one or more GVSP receivers. For instance, this can be a *GigE Vision to HDMI converter*.
@@ -112,7 +112,7 @@ Physical Link Configuration
 3. Static Link Aggregation Group configuration (static LAG configuration, sLAG)
 4. Dynamic Link Aggregation Group configuration (dynamic LAG configuration, dLAG)
 
-![discovery](/assets/images/discovery.png)
+![discovery](/assets/images/gige/discovery.png)
 
 ### GVCP
 
@@ -128,13 +128,13 @@ GVCP 是一种基于 UDP 传输层协议的应用层协议。它基本上允许�
 
 当一个应用程序发送一个 GVCP 数据包时，它使用设备 GVCP 端口（3956）作为目的地，并使用其动态分配的 UDP 端口号作为源。
 
-![gvcp](/assets/images/gvcp.png)
+![gvcp](/assets/images/gige/gvcp.png)
 
-![acknowledge](/assets/images/acknowledge.png)
+![acknowledge](/assets/images/gige/acknowledge.png)
 
-![timeout_req](/assets/images/timeout_req.png)
+![timeout_req](/assets/images/gige/timeout_req.png)
 
-![timeout_ack](/assets/images/timeout_ack.png)
+![timeout_ack](/assets/images/gige/timeout_ack.png)
 
 The Channel Concept
 
@@ -142,11 +142,11 @@ The Channel Concept
 2. Stream channel (from 0 to 512 stream channels)
 3. Message channel (0 or 1 message channel)
 
-![basic_channels_example](/assets/images/basic_channels_example.png)
+![basic_channels_example](/assets/images/gige/basic_channels_example.png)
 
-![advanced_channels_example](/assets/images/advanced_channels_example.png)
+![advanced_channels_example](/assets/images/gige/advanced_channels_example.png)
 
-![gvcp_commands_characteristics](/assets/images/gvcp_commands_characteristics.png)
+![gvcp_commands_characteristics](/assets/images/gige/gvcp_commands_characteristics.png)
 
 ### GVSP
 
@@ -154,9 +154,9 @@ GVSP is an application layer protocol relying on the UDP transport layer protoco
 
 GVSP packets always travel from a GVSP transmitter to a receiver.
 
-![data_resend_flowchart](/assets/images/data_resend_flowchart.png)
+![data_resend_flowchart](/assets/images/gige/data_resend_flowchart.png)
 
-![data_block_standard_transmission_mode](/assets/images/data_block_standard_transmission_mode.png)
+![data_block_standard_transmission_mode](/assets/images/gige/data_block_standard_transmission_mode.png)
 
 ### Bootstrap Registers
 
@@ -166,7 +166,7 @@ GVSP packets always travel from a GVSP transmitter to a receiver.
 
 ## SDK
 
-![sdk](/assets/images/sdk.png)
+![sdk](/assets/images/gige/sdk.png)
 
 写一个 GigE Vision SDK 需要对网络协议、图像处理以及相机控制等方面有深入的了解。下面是一般的步骤：
 
@@ -218,4 +218,4 @@ GVSP packets always travel from a GVSP transmitter to a receiver.
 
 这些 GigE Vision SDK 均提供了详细的文档和技术支持，可以帮助快速实现图像采集和处理。此外，如果需要定制解决方案，也可以考虑咨询这些公司的技术团队。
 
-![demo](/assets/images/demo.png)
+![demo](/assets/images/gige/demo.png)
