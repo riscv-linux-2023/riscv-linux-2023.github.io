@@ -174,3 +174,8 @@ sudo apt install openjdk-17-jre-headless
 wget -c https://github.com/plantuml/plantuml/releases/download/v1.2023.1/plantuml-1.2023.1.jar
 sudo cp plantuml-1.2023.1.jar /usr/bin/plantuml.jar
 ```
+
+## 参考
+
+- GitHub: <https://github.com/xiaoweiChen/CMake-Best-Practices>
+- Code: <https://github.com/PacktPublishing/CMake-Best-Practices>
